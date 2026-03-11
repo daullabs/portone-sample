@@ -1,7 +1,7 @@
 "use client"
 
 import * as PortOne from "@portone/browser-sdk/v2"
-import { randomId } from "../lib/random"
+import { randomId } from "@/lib/random"
 import {
   issueBillingKeyByApi,
   payWithBillingKeyAction,

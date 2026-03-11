@@ -5,6 +5,8 @@ namespace NodeJS {
     NEXT_PUBLIC_PAYMENT_CHANNEL_KEY: string
     /** 2. 빌링키 결제 테스트(정기 결제) */
     NEXT_PUBLIC_BILLING_CHANNEL_KEY: string
+    /** 3. 본인인증 테스트 (채널 속성: 본인인증) */
+    NEXT_PUBLIC_IDENTITY_CHANNEL_KEY: string
     V2_API_SECRET: string
   }
 }

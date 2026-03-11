@@ -1,5 +1,5 @@
+import PaymentForm, { Item } from "@/ui/payment-form"
 import { GetPaymentError, PaidPayment, PaymentClient, PaymentStatus } from "@portone/server-sdk/payment"
-import PaymentForm, { Item } from "./ui/payment-form"
 
 const portone = PaymentClient({ secret: process.env.V2_API_SECRET })
 

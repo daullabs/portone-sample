@@ -15,6 +15,8 @@ import { usePathname } from "next/navigation"
 const navItems = [
   { href: "/", label: "일반 결제 테스트", description: "1회성 결제" },
   { href: "/billing", label: "빌링키 결제 테스트", description: "정기 결제" },
+  { href: "/billing-and-pay", label: "빌링키+초회결제 테스트", description: "휴대폰 결제 한 번에" },
+  { href: "/identity", label: "본인인증 테스트", description: "KG이니시스 통합인증 등" },
 ] as const
 
 export function AppSidebar() {

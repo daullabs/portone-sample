@@ -6,7 +6,7 @@ import * as PortOne from "@portone/browser-sdk/v2"
 import type { Currency } from "@portone/server-sdk/common"
 import Image from "next/image"
 import { FormEventHandler, useState } from "react"
-import { randomId } from "../lib/random"
+import { randomId } from "@/lib/random"
 
 export type Item = {
   id: string
