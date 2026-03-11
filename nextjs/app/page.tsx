@@ -91,11 +91,19 @@ export default function Home() {
   }
 
   return (
-    <PaymentForm
-      item={item}
-      storeId={process.env.STORE_ID}
-      channelKey={process.env.CHANNEL_KEY}
-      completePaymentAction={completePayment}
-    />
+    <div className="mx-auto w-full max-w-2xl space-y-6 pb-12">
+      <header className="space-y-2">
+        <h1 className="text-2xl font-semibold tracking-tight">
+          일반 결제 테스트
+        </h1>
+      </header>
+
+      <PaymentForm
+        item={item}
+        storeId={process.env.NEXT_PUBLIC_STORE_ID ?? ""}
+        channelKey={process.env.NEXT_PUBLIC_PAYMENT_CHANNEL_KEY ?? ""}
+        completePaymentAction={completePayment}
+      />
+    </div>
   )
 }

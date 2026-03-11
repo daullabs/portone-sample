@@ -1,4 +1,6 @@
+import { Sidebar, SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 import type { Metadata } from "next"
+import { AppSidebar } from "./components/app-sidebar"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -12,8 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
-        <div id="root">{children}</div>
+      <body className="w-full">
+        <SidebarProvider>
+          <Sidebar variant="sidebar">
+            <AppSidebar />
+          </Sidebar>
+          <SidebarInset className="rounded-none!">
+            {children}
+          </SidebarInset>
+        </SidebarProvider>
       </body>
     </html>
   )
